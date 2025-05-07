@@ -20,16 +20,13 @@
     <!--preload-->
     <link rel="preload" as="image" href="img/CarsONE.png"/>
 </head>
-
-    <section class="banner">
-        <img src="img/pexels-pixabay-104836.jpg">
-
-    </section>
 <body> 
     <!--header-->
     <header class="header">
         <div class="container">
-            <img src="img/CarsONE.png" class="logo">
+            <a href="index2.html">
+                <img src="img/CarsONE.png" class="logo" alt="CarsONE Logo">
+            </a>
 
             <div class="header-actions">
                 <a href="#" class="btn btn-login">Entrar</a>
@@ -38,7 +35,39 @@
         </div>
     </header>
 
-    <!-- Hero Section -->
+    <!-- navbar -->
+    <nav class="navbar">
+        <div class="container">
+            <ul class="navbar-list">
+                <li class="navbar-item">
+                    <a href="index2.html" class="navbar-link">HOME</a>
+                </li>
+
+                <li class="navbar-item">
+                    <a href="#" class="navbar-link">NOVOS</a>
+                </li>
+                
+                <li class="navbar-item">
+                    <a href="#" class="navbar-link">USADOS</a>
+                </li>
+
+                <li class="navbar-item">
+                    <a href="#" class="navbar-link">SOBRE NÓS</a>
+                </li>
+
+                <li class="navbar-item">
+                    <a href="#" class="navbar-link">CONTATO</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- banner Section -->
+    <section class="banner">
+        <img src="img/pexels-pixabay-104836.jpg" alt="Banner carros">
+    </section>
+
+    <!-- hero section -->
     <section class="hero">
         <div class="container">
             <div class="hero-content">
@@ -46,7 +75,7 @@
                 <p class="hero-text">Confira nossos carros disponíveis, com uma grande oferta de 
                     oferecer o seu carro usado como entrada em um novo veículo!!!</p>
 
-                <p id="hero-text">Compre seu  carro agora e parcele em até 60x!!!</p>
+                <p id="hero-text">Compre seu carro agora e parcele em até 60x!!!</p>
 
                 <div class="hero-search">
                     <input type="text" placeholder="Pesquise modelos aqui" class="search-input">
@@ -56,53 +85,53 @@
         </div>
     </section>
 
+    <!-- produtos section -->
+    <section class="section produto" aria-label="produto">
+        <div class="container-prod">
 
-
-    <nav class="navbar">
-        <ul class="navbar-list">
-            <li class="navbar-item">
-                <a href="#" class="navbar-link">HOME</a>
-            </li>
-
-            <li class="navbar-item">
-                <a href="#" class="navbar-link">NOVOS</a>
-            </li>
-            
-            <li class="navbar-item">
-                <a href="#" class="navbar-link">USADOS</a>
-            </li>
-
-            <li class="navbar-item">
-                <a href="#" class="navbar-link">SOBRE NÓS</a>
-            </li>
-
-            <li class="navbar-item">
-                <a href="#" class="navbar-link">CONTATO</a>
-            </li>
-        </ul>
-    </nav>
-
-
-    <!-- Featured Cars Section -->
-    <section class="featured-cars">
-        <div class="container">
-            <h2 class="section-title">Veículos em Destaque</h2>
-            <div class="cars-grid">
-                <!-- Carros serão adicionados dinamicamente com JavaScript -->
+            <div class="galeria">
+                <a href="#" class="venda1">
+                    <img src="img/640_480_folhacar_volkswagen-fusca-2-0-tsi-sport-dsg-13-13-64e0e0-17.jpg" alt="Volkswagen Fusca">
+                    <h2>Volkswagen Fusca 2.0</h2>
+                </a>
+                <a href="#" class="venda2">
+                    <img src="img/Nissan-Kicks.jpeg" alt="Nissan Kicks">
+                    <h2>Nissan Kicks 2024</h2>
+                </a>
+                <a href="#" class="venda3">
+                    <img src="img/images.jpg" alt="Jeep Renegade">
+                    <h2>Jeep Renegade</h2>
+                </a>
+                <a href="#" class="venda4">
+                    <img src="img/Volkswagen-Nivus-2025.webp" alt="Volkswagen Nivus">
+                    <h2>Volkswagen Nivus 2025</h2>
+                </a>
+                <a href="#" class="venda5">
+                    <img src="img/images (1).jpg" alt="Toyota Corolla">
+                    <h2>Toyota Corolla Sedan</h2>
+                </a>
+                <a href="#" class="venda6">
+                    <img src="img/images (2).jpg" alt="Honda Civic">
+                    <h2>Honda Civic 2024</h2>
+                </a>
             </div>
         </div>
     </section>
 
-    <!-- Footer -->
+
+    <!-- footer -->
     <footer class="footer">
         <div class="container">
             <div class="footer-content">
                 <div class="footer-logo">
-                    <img src="img/CarsONE.png" class="logo">
+                    <a href="index2.html">
+                        <img src="img/CarsONE.png" alt="CarsONE Logo" class="logo">
+                    </a>
                 </div>
                 <div class="footer-links">
+                    <h3>Links Rápidos</h3>
                     <ul>
-                        <li><a href="#">Home</a></li>
+                        <li><a href="index2.html">Home</a></li>
                         <li><a href="#">Novos</a></li>
                         <li><a href="#">Usados</a></li>
                         <li><a href="#">Sobre Nós</a></li>
@@ -130,11 +159,8 @@
         </div>
     </footer>
 
-    <!--js-->
-    <script src="js/script.js"></script>
 
     <!--ion icon-->
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 </body>
-</html>
