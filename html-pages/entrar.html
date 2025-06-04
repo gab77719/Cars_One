@@ -12,14 +12,43 @@
     <link rel="stylesheet" href="../css/entrar.css">
 </head>
 <body>
-    <div class="neumorphic neumorphic-card">
-        <h1>Login</h1>
-        <input type="text" class="neumorphic neumorphic-input"
-        placeholder="Username">
-        <input type="password" class="neumorphic neumorphic-input"
-        placeholder="Password">
 
-        <button class="neumorphic neumorphic-button">Entrar</button>
+    <div class="background-container">
+        <img src="../img/imagemdocarro.jpg" class="background-img">
+        </div>
     </div>
+
+    <div class="neumorphic neumorphic-card">
+        <div class= "">
+            <img src="../img/logodosite.png" alt="CarsONE Logo" class="logo">
+        </div>
+
+        <h1>Login</h1>
+        
+        <form id="loginForm">
+            <div class="input-group">
+                <input type="text" class="neumorphic-inset neumorphic-input" 
+                       placeholder="Usuário ou E-mail" id="username" required>
+            </div>
+            
+            <div class="input-group">
+                <input type="password" class="neumorphic-inset neumorphic-input" 
+                       placeholder="Senha" id="password" required>
+            </div>
+
+            <button type="submit" class="neumorphic neumorphic-button">
+                Entrar
+            </button>
+        </form>
+
+        <a href="#" class="forgot-password">Esqueceu sua senha?</a>
+
+        <div class="divider"></div>
+
+        <div class="social-login">
+            <button class="social-btn" title="Login com whatsapp"></button> <ion-icon name="logo-whatsapp"></ion-icon>
+            <button class="social-btn" title="Login com Facebook"></button> <ion-icon name="logo-whatsapp"></ion-icon>
+            <button class="social-btn" title="Login com Apple"><ion-icon name="logo-whatsapp"></ion-icon></button>
+        </div>
 </body>
 </html>

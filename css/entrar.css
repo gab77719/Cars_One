@@ -1,9 +1,199 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #e0e5ec 0%, #d4dae3 100%);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.background-container {
+    position: relative;
+}
+
+.background-img {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
 .neumorphic {
-    background: ; 
+    background: #e0e5ec;
+    border-radius: 20px;
     box-shadow: 10px 10px 20px #a3b1c6, -10px -10px 20px #ffffff;
 }
 
 .neumorphic-inset {
-    background: ;
-    box-shadow: inset 10px 10px 20px #a3b1c6, inset -10px -10px;
+    background: #e0e5ec;
+    border-radius: 20px;
+    box-shadow: inset 8px 8px 15px #a3b1c6, inset -8px -8px 15px #ffffff;
+}
+
+.neumorphic-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 60px 40px;
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+    transition: all 0.3s ease;
+
+.neumorphic-card:hover {
+    box-shadow: 15px 15px 30px #a3b1c6, -15px -15px 30px #ffffff;
+}
+
+.logo {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px;
+    box-shadow: 8px 8px 16px #a3b1c6, -8px -8px 16px #ffffff;
+}
+
+.logo::before {
+    content: "🚗";
+    font-size: 36px;
+}
+
+h1 {
+    color: #4a5568;
+    font-size: 2.5rem;
+    font-weight: 300;
+    margin-bottom: 40px;
+    text-shadow: 2px 2px 4px rgba(163, 177, 198, 0.3);
+}
+
+.input-group {
+    width: 100%;
+    margin-bottom: 25px;
+    position: relative;
+}
+
+.neumorphic-input {
+    width: 100%;
+    padding: 18px 25px;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    color: #4a5568;
+    background: transparent;
+    transition: all 0.3s ease;
+}
+
+.neumorphic-input::placeholder {
+    color: #a0aec0;
+    font-weight: 300;
+}
+
+.neumorphic-input:focus {
+    box-shadow: inset 12px 12px 20px #a3b1c6, inset -12px -12px 20px #ffffff;
+}
+
+.neumorphic-button {
+    width: 100%;
+    padding: 18px 25px;
+    border: none;
+    outline: none;
+    font-size: 18px;
+    font-weight: 500;
+    color: #ffffff;
+    background:  #686868;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-top: 20px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.neumorphic-button:hover {
+    transform: translateY(-2px);
+    box-shadow: 12px 12px 25px #a3b1c6, -12px -12px 25px #ffffff;
+}
+
+.neumorphic-button:active {
+    transform: translateY(0);
+    box-shadow: inset 8px 8px 15px #a3b1c6, inset -8px -8px 15px #ffffff;
+}
+
+.forgot-password {
+    margin-top: 25px;
+    color: #667eea;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 300;
+    transition: all 0.3s ease;
+}
+
+.forgot-password:hover {
+    color: #764ba2;
+    text-shadow: 1px 1px 2px rgba(163, 177, 198, 0.3);
+}
+
+.divider {
+    width: 100%;
+    height: 1px;
+    background: linear-gradient(90deg, transparent, #a3b1c6, transparent);
+    margin: 30px 0;
+}
+
+.social-login {
+    display: flex;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.social-btn {
+    width: 50px;
+    height: 50px;
+    border-radius: 15px;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    transition: all 0.3s ease;
+    background: #e0e5ec;
+    box-shadow: 6px 6px 12px #a3b1c6, -6px -6px 12px #ffffff;
+}
+
+.social-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 8px 8px 16px #a3b1c6, -8px -8px 16px #ffffff;
+}
+
+@media (max-width: 480px) {
+    .neumorphic-card {
+        padding: 40px 30px;
+        margin: 20px;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    .logo {
+        width: 60px;
+        height: 60px;
+    }
+
+    .logo::before {
+        font-size: 28px;
+    }
 }
